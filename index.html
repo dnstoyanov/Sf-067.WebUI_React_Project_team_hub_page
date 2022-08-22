@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Sports Hub</p>
+      </div>
+      <div class="nav_items">
+        <div class="search">
+          <img src="images/search.svg" alt="" class="search_icon" />
+          <input type="text" placeholder="Search by" class="search_field" />
+        </div>
+        <div class="socials">
+          <p class="socials_txt">Share</p>
+          <img src="images/facebook.svg" alt="" class="facebook_icon" />
+          <img src="images/twitter.svg" alt="" class="twitter_icon" />
+          <img src="images/g_plus.svg" alt="" class="g_plus_icon" />
+        </div>
+
+        <div class="user">
+          <div class="profile">
+            <img src="images/profile_pic.png" alt="" class="profile_pic" />
+            <div class="profile_name">Ivan Baloh</div>
+            <div class="profile_control">
+              <img src="images/drop_down.png" alt="" />
+            </div>
+            <div class="lang_name">EN</div>
+            <div class="lang_control">
+              <img src="images/drop_down.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="alert">
+        <div class="warning"><img src="/images/warning.svg" alt="" /></div>
+        <p class="alert-title">You are about to unfollow the team!</p>
+        <p class="alert-sub-title">Are you sure?</p>
+        <div class="btn-separator"></div>
+        <button class="confirm-btn">Yes</button
+        ><button class="deny-btn">No</button>
+      </div>
+      <div class="left-wrapper">
+        <div class="left_container">
+          <div class="info-text">TEAM HUB</div>
+          <div class="nav-item"></div>
+          <nav>
+            <ul class="menu">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">NFL</a></li>
+              <li><a href="#">NBA</a></li>
+              <li><a href="#">MLB</a></li>
+              <li><a href="#">NHL</a></li>
+              <li><a href="#">CBB</a></li>
+              <li><a href="#">CFB</a></li>
+              <li><a href="#">NASCAR</a></li>
+              <li><a href="#">GOLF</a></li>
+              <li><a href="#">SOCCER</a></li>
+              <li class="active"><a class="active" href="#">TEAM HUB</a></li>
+              <li><a href="#">LIFESTYLE</a></li>
+              <li><a href="#">DEALBOOK</a></li>
+              <li><a href="#">VIDEO </a></li>
+            </ul>
+          </nav>
+
+          <div class="nav_socials">
+            <p class="nav_socials_txt">Follow</p>
+            <div class="socials_container">
+              <div class="first-row">
+                <div class="nav_facebook_icon">
+                  <img src="images/facebook.svg" alt="" />
+                </div>
+                <div class="nav_twitter_icon">
+                  <img src="images/twitter.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="second-row">
+                <div class="nav_g_plus_icon">
+                  <img src="images/google.svg" alt="" />
+                </div>
+                <div class="nav_youtube_icon">
+                  <img src="images/you_tube.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-wrapper">
+        <div class="wrapper">
+          <div class="center_container">
+            <div class="scroll-bar"></div>
+            <div class="team-info">
+              <div class="team-logo">
+                <img src="/images/291px-Los_Angeles_Lakers_logo.png" alt="" />
+              </div>
+              <div class="team-info-text">
+                <p class="team-name">Lost Angeles Lakers</p>
+                <p class="follow-status">Following</p>
+              </div>
+              <div class="follow-button" onclick="showAlert()">Unfollow</div>
+            </div>
+            <div class="team-news">
+              <div class="news-thumb">
+                <img src="/images/la_thumb_1.png" alt="" />
+              </div>
+              <div class="news-info-text">
+                <p class="news-heading">
+                  Los Angeles Lakers CUP 2020 Trophy Tour reunites rugby legends
+                  in South Africa
+                </p>
+                <p class="news-content">
+                  Hundreds of basketball fans and a host of Springbok legends
+                  joined the celebration of rugby in South Africa this week on
+                  the 14th stop of the Basketball World Cup 2019 Trophy Tour.
+                </p>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="team-news">
+              <div class="news-thumb">
+                <img src="/images/la_thumb_2.png" alt="" />
+              </div>
+              <div class="news-info-text">
+                <p class="news-heading">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+                <p class="news-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="separator"></div>
+
+            <div class="team-news">
+              <div class="news-thumb">
+                <img src="/images/la_thumb_3.png" alt="" />
+              </div>
+              <div class="news-info-text">
+                <p class="news-heading">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+                <p class="news-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+
+            <div class="team-info">
+              <div class="team-logo">
+                <img src="/images/mlb.png" alt="" />
+              </div>
+              <div class="team-info-text">
+                <p class="team-name">Major League Baseball</p>
+                <p class="follow-status">Following</p>
+              </div>
+              <div class="follow-button" onclick="showAlert()">Unfollow</div>
+            </div>
+
+            <div class="team-news">
+              <div class="news-thumb">
+                <img src="/images/mlb_thumb_1.png" alt="" />
+              </div>
+              <div class="news-info-text">
+                <p class="news-heading">
+                  Rugby World Cup 2019 Trophy Tour reunites rugby legends in
+                  South Africa
+                </p>
+                <p class="news-content">
+                  Hundreds of rugby fans and a host of Springbok legends joined
+                  the celebration of rugby in South Africa this week on the 14th
+                  stop of the Rugby World Cup 2019 Trophy Tour.
+                </p>
+              </div>
+            </div>
+            <div class="separator"></div>
+
+            <div class="team-news">
+              <div class="news-thumb">
+                <img src="/images/mlb_thumb_2.png" alt="" />
+              </div>
+              <div class="news-info-text">
+                <p class="news-heading">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+                <p class="news-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="separator"></div>
+
+            <div class="team-news">
+              <div class="news-thumb">
+                <img src="/images/mlb_thumb_3.png" alt="" />
+              </div>
+              <div class="news-info-text">
+                <p class="news-heading">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing.
+                </p>
+                <p class="news-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+
+            <div class="other-news">
+              <div class="most-popular">
+                <div class="most-popular-title">MOST POPULAR</div>
+                <div class="popular-news">
+                  <div class="popular-news-container">
+                    <div class="popular-thumb">
+                      <img src="/images/popular_1.png" alt="" />
+                    </div>
+                    <div class="popular-info-text">
+                      <p class="popular-name">Lorem ipsum</p>
+                      <p class="popular-content">
+                        Lorem ipsum dolor sit amet, consectetur
+                      </p>
+                    </div>
+                  </div>
+                  <div class="popular-news-container">
+                    <div class="popular-thumb">
+                      <img src="/images/popular_2.png" alt="" />
+                    </div>
+                    <div class="popular-info-text">
+                      <p class="popular-name">Lorem ipsum</p>
+                      <p class="popular-content">
+                        Lorem ipsum dolor sit amet, consectetur
+                      </p>
+                    </div>
+                  </div>
+                  <div class="popular-news-container">
+                    <div class="popular-thumb">
+                      <img src="/images/popular_3.png" alt="" />
+                    </div>
+                    <div class="popular-info-text">
+                      <p class="popular-name">Lorem ipsum</p>
+                      <p class="popular-content">
+                        Lorem ipsum dolor sit amet, consectetur
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="most-commented">
+                <div class="most-commented-title">MOST COMMENTED</div>
+                <div class="commented-news">
+                  <div class="commented-news-container">
+                    <div class="commented-thumb">
+                      <img src="/images/most_commented_1.png" alt="" />
+                    </div>
+                    <div class="commented-info-text">
+                      <p class="commented-name">Lorem ipsum</p>
+                      <p class="commented-content">
+                        Lorem ipsum dolor sit amet, consectetur
+                      </p>
+                    </div>
+                  </div>
+                  <div class="commented-news-container">
+                    <div class="commented-thumb">
+                      <img src="/images/most_commented_2.png" alt="" />
+                    </div>
+                    <div class="commented-info-text">
+                      <p class="commented-name">Lorem ipsum</p>
+                      <p class="commented-content">
+                        Lorem ipsum dolor sit amet, consectetur
+                      </p>
+                    </div>
+                  </div>
+                  <div class="commented-news-container">
+                    <div class="commented-thumb">
+                      <img src="/images/most_commented_3.png" alt="" />
+                    </div>
+                    <div class="commented-info-text">
+                      <p class="commented-name">Lorem ipsum</p>
+                      <p class="commented-content">
+                        Lorem ipsum dolor sit amet, consectetur
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right_container">
+            <div class="right-info-text">NEWS</div>
+            <div class="video-news">
+              <div class="video-card-1">
+                <span class="name-label">facebook video</span>
+                <div class="video-thumb">
+                  <img src="/images/fb_1_thumb.png" alt="" />
+                </div>
+                <div class="video-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </div>
+
+                <div class="fb-controls">
+                  <span class="like-us">Like us on Facebook</span>
+
+                  <button class="button">
+                    <span class="button--icon"
+                      ><img src="/images/like.svg" alt=""
+                    /></span>
+                    <span class="button--text">Like</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="video-card-2">
+                <span class="name-label">dealbook</span>
+                <div class="video-thumb">
+                  <img src="/images/fb_2_thumb.png" alt="" />
+                </div>
+                <div class="video-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </div>
+              </div>
+
+              <div class="video-card-3">
+                <div class="video-thumb">
+                  <img src="/images/commercial.png" alt="" />
+                </div>
+              </div>
+
+              <div class="video-card-4">
+                <span class="name-label">FACEBOOK post</span>
+                <div class="video-thumb">
+                  <img src="/images/fb_3_thumb.png" alt="" />
+                </div>
+                <div class="video-description-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </div>
+
+                <div class="fb-controls-4">
+                  <span class="like-us">Like us on Facebook</span>
+
+                  <button class="button">
+                    <span class="button--icon"
+                      ><img src="/images/like.svg" alt=""
+                    /></span>
+                    <span class="button--text">Like</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="bottom-nav-1">
+            <span class="title">COMPANY INFO</span>
+            <ul>
+              <li><a href="#">About Sports Hub</a></li>
+              <li><a href="#">News / In the Press</a></li>
+              <li><a href="#">Advertising / Sports Blogger Ad Network</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="bottom-nav-2">
+            <span class="title">CONTRIBUTORS</span>
+            <ul>
+              <li><a href="#">Featured Writers Program</a></li>
+              <li><a href="#">Featured Team Writers Program</a></li>
+              <li><a href="#">Internship Program</a></li>
+            </ul>
+          </div>
+          <div class="bottom-newsletter">
+            <span class="title">NEWSLETTER</span>
+            <p>Sign up to receive the latest sports news</p>
+            <div class="search-box">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                placeholder="Your email address"
+              /><button class="btn" type="submit">Subscirbe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <p>Sports Hub</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©2019 Sports Hub</p>
+        <p>Privacy / Terms</p>
+      </div>
+    </footer>
+    <script>
+      function showAlert() {
+        const alertBlock = document.getElementById("alert");
+        if (alertBlock.style.display !== "none") {
+          alertBlock.style.display = "none";
+        } else {
+          alertBlock.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
